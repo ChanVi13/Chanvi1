@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chúc Mừng Sinh Nhật</title>
+<style>
+  body { text-align: center; padding: 50px; background-color: #f7f7f7; }
+  h1 { color: #ff4081; }
+  img, video { max-width: 100%; height: auto; }
+  .qr-code { margin-top: 20px; }
+</style>
+</head>
+<body>
+  <h1>Chúc Mừng Sinh Nhật Tình Yêu!</h1>
+  
+  <!-- Thêm hình ảnh -->
+  <img src="đường-dẫn-đến-hình-ảnh.jpg" alt="Hình Ảnh">
+
+  <!-- Thêm video -->
+  <video controls>
+    <source src="đường-dẫn-đến-video.mp4" type="video/mp4">
+    Rất tiếc, trình duyệt của bạn không hỗ trợ video nhúng.
+  </video>
+  
+  <!-- Hiển thị mã QR -->
+  <div class="qr-code" id="qr-code"></div>
+  
+  <script>
+    // Sử dụng thư viện tạo mã QR, ví dụ: qrcode.js
+    // Đảm bảo đường dẫn đến thư viện QR Code là đúng
+    // Hãy thay 'đường-dẫn-đến-thông-diệp-mừng-sinh-nhật' bằng nội dung hoặc URL bạn muốn.
+  </script>
+
+  <script src="đường-dẫn-đến-thư-viện-qrcode.min.js"></script>
+  <script>
+    var qrcode = new QRCode(document.getElementById("qr-code"), {
+      text: "đường-dẫn-đến-thông-diệp-mừng-sinh-nhật",
+      width: 128,
+      height: 128,
+    });
+  </script>
+</body>
+</html>
